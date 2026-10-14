@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:lead_name",
+ "creation": "2026-10-13 17:09:52.214638",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "freelancer",
+  "lead_name",
+  "e_mail",
+  "company",
+  "project_type",
+  "budget",
+  "timeline",
+  "details",
+  "source",
+  "stage",
+  "last_contacted",
+  "priority_score",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "freelancer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Freelancer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "label": "Lead Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "e_mail",
+   "fieldtype": "Data",
+   "label": "E Mail"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "project_type",
+   "fieldtype": "Select",
+   "label": "Project Type",
+   "options": "Logo Design\nBranding / Strategy\nBranding Kit (Design)\nWebsite Development\nWriting\nSocial Media\nAdvertisements\nPosters\nOther"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "label": "Budget"
+  },
+  {
+   "fieldname": "timeline",
+   "fieldtype": "Data",
+   "label": "Timeline"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Long Text",
+   "label": "Details"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Social Media\nReferral\nCold Outreach\nAdvertisement\nOther"
+  },
+  {
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "label": "Stage",
+   "options": "new Lead\nContacted\nproposal Sent\nnegotiating\nWon\nLost"
+  },
+  {
+   "fieldname": "last_contacted",
+   "fieldtype": "Data",
+   "label": "Last Contacted"
+  },
+  {
+   "default": "Cold",
+   "fieldname": "priority_score",
+   "fieldtype": "Select",
+   "label": "Priority Score",
+   "options": "Hot\nWarm\nCold"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created at"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated at"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-14 10:12:07.036963",
+ "modified_by": "Administrator",
+ "module": "Prolance App",
+ "name": "Lead",
+ "naming_rule": "By fieldname",
+ "owner": "adhamsaheer15@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Freelancer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

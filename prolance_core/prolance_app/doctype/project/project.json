@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:project_name",
+ "creation": "2026-10-13 14:50:41.027400",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "freelacer",
+  "client",
+  "project_name",
+  "project_type",
+  "satus",
+  "deadline",
+  "value",
+  "is_revision",
+  "delivered_at",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "freelacer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Freelacer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "project_type",
+   "fieldtype": "Select",
+   "label": "Project Type",
+   "options": "Logo Design\nBranding / Strategy\nBranding Kit (Design)\nWebsite Development\nWriting\nSocial Media\nAdvertisements\nPoster\nOthers"
+  },
+  {
+   "fieldname": "satus",
+   "fieldtype": "Select",
+   "label": "Satus",
+   "options": "In Progress\nAwaiting Payment\nCompleted"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Deadline",
+   "reqd": 1
+  },
+  {
+   "default": "0.0",
+   "fieldname": "value",
+   "fieldtype": "Currency",
+   "label": "Value"
+  },
+  {
+   "default": "No",
+   "fieldname": "is_revision",
+   "fieldtype": "Check",
+   "label": "is revision",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "delivered_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Delivered At",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created at"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated at"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-14 10:09:14.679104",
+ "modified_by": "Administrator",
+ "module": "Prolance App",
+ "name": "Project",
+ "naming_rule": "By fieldname",
+ "owner": "adhamsaheer15@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Freelancer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

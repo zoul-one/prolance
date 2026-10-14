@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:text",
+ "creation": "2026-10-13 16:56:56.845736",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "text",
+  "due_date",
+  "is_complete",
+  "is_dismissed",
+  "project",
+  "lead",
+  "invoice",
+  "action_link",
+  "is_due_today_notified",
+  "is_overdue_notified",
+  "created_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Data",
+   "label": "Text",
+   "unique": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "default": "No",
+   "fieldname": "is_complete",
+   "fieldtype": "Check",
+   "label": "is complete",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "No",
+   "fieldname": "is_dismissed",
+   "fieldtype": "Check",
+   "label": "is dismissed",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Data",
+   "label": "Lead"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Data",
+   "label": "Invoice"
+  },
+  {
+   "fieldname": "action_link",
+   "fieldtype": "Data",
+   "label": "Action Link"
+  },
+  {
+   "default": "No",
+   "fieldname": "is_due_today_notified",
+   "fieldtype": "Check",
+   "label": "is due today notified",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "No",
+   "fieldname": "is_overdue_notified",
+   "fieldtype": "Check",
+   "label": "is overdue notified",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created at"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-14 10:08:15.500350",
+ "modified_by": "Administrator",
+ "module": "Prolance App",
+ "name": "Reminders",
+ "naming_rule": "By fieldname",
+ "owner": "adhamsaheer15@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Freelancer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
