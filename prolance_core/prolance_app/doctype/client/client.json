@@ -13,15 +13,16 @@
   "company",
   "notes",
   "logo",
-  "client_user"
+  "invoice_amount",
+  "comission_percentage",
+  "comission_amount"
  ],
  "fields": [
   {
    "fieldname": "freelancer",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Freelancer",
-   "options": "User",
    "reqd": 1
   },
   {
@@ -58,16 +59,27 @@
    "label": "Logo"
   },
   {
-   "fieldname": "client_user",
-   "fieldtype": "Link",
-   "label": "Client User",
-   "options": "User"
+   "fieldname": "invoice_amount",
+   "fieldtype": "Int",
+   "label": "Invoice Amount"
+  },
+  {
+   "fieldname": "comission_amount",
+   "fieldtype": "Int",
+   "label": "Comission Amount",
+   "read_only": 1
+  },
+  {
+   "default": "10",
+   "fieldname": "comission_percentage",
+   "fieldtype": "Int",
+   "label": "Comission percentage"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-14 10:04:47.562147",
+ "modified": "2026-10-14 13:28:05.419671",
  "modified_by": "Administrator",
  "module": "Prolance App",
  "name": "Client",

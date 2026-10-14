@@ -6,7 +6,6 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "user",
   "business_name",
   "your_name",
   "e_mail",
@@ -18,14 +17,6 @@
   "payment_terms"
  ],
  "fields": [
-  {
-   "fieldname": "user",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "User",
-   "options": "User",
-   "reqd": 1
-  },
   {
    "fieldname": "business_name",
    "fieldtype": "Data",
@@ -55,7 +46,8 @@
   {
    "fieldname": "logo",
    "fieldtype": "Attach Image",
-   "label": "Logo"
+   "label": "Logo",
+   "reqd": 1
   },
   {
    "default": "INR",
@@ -78,7 +70,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-14 10:10:01.772792",
+ "modified": "2026-10-14 12:34:10.616874",
  "modified_by": "Administrator",
  "module": "Prolance App",
  "name": "Business Profile",
