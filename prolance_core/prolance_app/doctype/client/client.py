@@ -6,5 +6,4 @@ from frappe.model.document import Document
 
 
 class Client(Document):
-    def validate(self):
-        self.comission_amount = self.invoice_amount * self.comission_percentage/ 100
+    pass
