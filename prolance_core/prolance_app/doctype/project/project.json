@@ -6,27 +6,24 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "freelacer",
+  "freelancer",
+  "column_break_8d32",
   "client",
+  "section_break_zx7y",
   "project_name",
   "project_type",
-  "satus",
+  "column_break_amxg",
   "deadline",
   "value",
+  "status",
+  "section_break_jx50",
   "is_revision",
   "delivered_at",
+  "column_break_m5cd",
   "created_at",
   "updated_at"
  ],
  "fields": [
-  {
-   "fieldname": "freelacer",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Freelacer",
-   "options": "User",
-   "reqd": 1
-  },
   {
    "fieldname": "client",
    "fieldtype": "Link",
@@ -46,12 +43,6 @@
    "fieldtype": "Select",
    "label": "Project Type",
    "options": "Logo Design\nBranding / Strategy\nBranding Kit (Design)\nWebsite Development\nWriting\nSocial Media\nAdvertisements\nPoster\nOthers"
-  },
-  {
-   "fieldname": "satus",
-   "fieldtype": "Select",
-   "label": "Satus",
-   "options": "In Progress\nAwaiting Payment\nCompleted"
   },
   {
    "fieldname": "deadline",
@@ -89,12 +80,47 @@
    "fieldname": "updated_at",
    "fieldtype": "Datetime",
    "label": "Updated at"
+  },
+  {
+   "fieldname": "freelancer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Freelancer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nAwaiting Payment\nCompleted"
+  },
+  {
+   "fieldname": "section_break_zx7y",
+   "fieldtype": "Section Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "column_break_8d32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jx50",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_m5cd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_amxg",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-14 10:09:14.679104",
+ "modified": "2026-10-15 02:00:59.762265",
  "modified_by": "Administrator",
  "module": "Prolance App",
  "name": "Project",

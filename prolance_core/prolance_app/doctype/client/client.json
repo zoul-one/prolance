@@ -7,15 +7,20 @@
  "engine": "InnoDB",
  "field_order": [
   "freelancer",
+  "section_break_dsoj",
+  "basic_info_column",
   "client_name",
   "e_mail",
   "phone",
   "company",
-  "notes",
-  "logo",
+  "column_break_h3wv",
   "invoice_amount",
   "comission_percentage",
-  "comission_amount"
+  "comission_amount",
+  "attach_image_here_section",
+  "logo",
+  "add_additional_info_here_section",
+  "notes"
  ],
  "fields": [
   {
@@ -74,12 +79,37 @@
    "fieldname": "comission_percentage",
    "fieldtype": "Int",
    "label": "Comission percentage"
+  },
+  {
+   "fieldname": "section_break_dsoj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_h3wv",
+   "fieldtype": "Column Break",
+   "label": "Invoice Details"
+  },
+  {
+   "fieldname": "add_additional_info_here_section",
+   "fieldtype": "Section Break",
+   "label": "Add Additional info here"
+  },
+  {
+   "fieldname": "basic_info_column",
+   "fieldtype": "Column Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "attach_image_here_section",
+   "fieldtype": "Section Break",
+   "label": "Attach Image here"
   }
  ],
  "grid_page_length": 50,
+ "image_field": "logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-14 16:01:14.771311",
+ "modified": "2026-10-15 00:55:39.026024",
  "modified_by": "Administrator",
  "module": "Prolance App",
  "name": "Client",
