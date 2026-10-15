@@ -20,7 +20,9 @@
   "attach_image_here_section",
   "logo",
   "add_additional_info_here_section",
-  "notes"
+  "notes",
+  "projects_tab",
+  "projects"
  ],
  "fields": [
   {
@@ -103,13 +105,24 @@
    "fieldname": "attach_image_here_section",
    "fieldtype": "Section Break",
    "label": "Attach Image here"
+  },
+  {
+   "fieldname": "projects_tab",
+   "fieldtype": "Tab Break",
+   "label": "Projects"
+  },
+  {
+   "fieldname": "projects",
+   "fieldtype": "Table",
+   "label": "Projects",
+   "options": "Client Project"
   }
  ],
  "grid_page_length": 50,
  "image_field": "logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-15 00:55:39.026024",
+ "modified": "2026-10-15 14:49:56.486125",
  "modified_by": "Administrator",
  "module": "Prolance App",
  "name": "Client",
