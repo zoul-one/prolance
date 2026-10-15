@@ -6,15 +6,19 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "basic_details_section",
   "business_name",
   "your_name",
   "e_mail",
+  "column_break_mxzu",
   "phone",
-  "address",
-  "logo",
   "tax_rate",
   "invoice_prefix",
-  "payment_terms"
+  "payment_terms",
+  "section_break_a56c",
+  "logo",
+  "address_section",
+  "address"
  ],
  "fields": [
   {
@@ -46,7 +50,6 @@
   {
    "fieldname": "logo",
    "fieldtype": "Attach Image",
-   "label": "Logo",
    "reqd": 1
   },
   {
@@ -65,12 +68,32 @@
    "fieldname": "payment_terms",
    "fieldtype": "Data",
    "label": "Payment Terms"
+  },
+  {
+   "fieldname": "column_break_mxzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Enter your Address here"
+  },
+  {
+   "fieldname": "section_break_a56c",
+   "fieldtype": "Section Break",
+   "label": "Attach Image here"
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
   }
  ],
  "grid_page_length": 50,
+ "image_field": "logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-14 12:34:10.616874",
+ "modified": "2026-10-14 18:04:11.584913",
  "modified_by": "Administrator",
  "module": "Prolance App",
  "name": "Business Profile",
