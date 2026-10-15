@@ -6,7 +6,10 @@ from frappe.model.document import Document
 
 
 class Project(Document):
-	pass
+    def on_update(self):
+        if self.client:
+            client_doc = frappe.get_doc("Client", self.client)
+            client_doc.save()
 
 @frappe.whitelist()
 def create_project(freelancer=None, client=None, project_name=None,
@@ -29,5 +32,6 @@ def create_project(freelancer=None, client=None, project_name=None,
     project.updated_at = updated_at
 
     project.insert()
+
 
     return project.name

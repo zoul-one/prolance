@@ -82,6 +82,7 @@ frappe.ui.form.on('Client', {
                         callback: function(r) {
                             if (r.message) {
                                 d.hide();
+                                frm.reload_doc();
                                 frappe.msgprint('Project created successfully!');
                             }
                         }
